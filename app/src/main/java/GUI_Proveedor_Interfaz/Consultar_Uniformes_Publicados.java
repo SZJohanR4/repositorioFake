@@ -1,4 +1,4 @@
-package GUI_Proveedor_Interfaz;
+package gui_proveedor_interfaz;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;

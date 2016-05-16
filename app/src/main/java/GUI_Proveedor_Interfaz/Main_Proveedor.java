@@ -1,4 +1,4 @@
-package GUI_Proveedor_Interfaz;
+package gui_proveedor_interfaz;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -59,7 +59,7 @@ public class Main_Proveedor extends AppCompatActivity implements NavigationView.
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main_Proveedor, menu);
+        getMenuInflater().inflate(R.menu.main_proveedor, menu);
         return true;
     }
 

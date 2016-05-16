@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="GUI_Proveedor_Interfaz.Main_Proveedor">
+    tools:context="gui_proveedor_interfaz.Main_Proveedor">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_Proveedor" />
+    <include layout="@layout/content_proveedor" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
