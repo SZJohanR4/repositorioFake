@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_consultarpublicidad"
+                android:icon="@drawable/ic_action_proveedor"
+                android:title="Consultar Publicidad Asignada" />
+            <item
+                android:id="@+id/nav_consultar_uniformes"
+                android:icon="@drawable/ic_action_buscar"
+                android:title="Consultar Uniformes Publicados" />
+            <item
+                android:id="@+id/nav_eliminar_uniformes"
+                android:icon="@drawable/ic_action_buscar"
+                android:title="Eliminar Uniformes" />
+            <item
+                android:id="@+id/nav_publicarUniforme"
+                android:icon="@drawable/ic_action_buscar"
+                android:title="Publicar Uniformes" />
+            <item
+                android:id="@+id/nav_solicitar_suscripcion"
+                android:icon="@drawable/ic_action_reservas"
+                android:title="Solicitar Suscripcion" />
+            <item
+                android:id="@+id/nav_solicitud_reserva"
+                android:icon="@drawable/ic_action_reservas"
+                android:title="Ver Solicitud Reserva" />
+
+        </group>
+</menu>

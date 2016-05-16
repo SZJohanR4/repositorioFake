@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/content_main"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="GUI_Proveedor_Interfaz.Main_Proveedor"
+    android:background="#22305c">
+
+    <TextView
+        android:layout_width="193dp"
+        android:layout_height="38dp"
+        android:text="Publicar Uniformes"
+        android:id="@+id/labPublicaruniformes"
+        android:autoText="false"
+        android:backgroundTint="@color/abc_background_cache_hint_selector_material_light"
+        android:fontFamily="@string/abc_action_menu_overflow_description"
+        android:height="@dimen/abc_action_bar_overflow_padding_start_material"
+        android:textSize="20dp"
+        android:textColor="@color/abc_background_cache_hint_selector_material_light"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txtarchivo"
+        android:foregroundTint="@color/abc_background_cache_hint_selector_material_light"
+        android:backgroundTint="@color/abc_background_cache_hint_selector_material_light"
+        android:text="                                   "
+        android:layout_alignBottom="@+id/btnImagen"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/labPublicaruniformes" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subir imagen"
+        android:id="@+id/btnImagen"
+        android:background="@color/button_material_dark"
+        android:backgroundTint="@color/abc_background_cache_hint_selector_material_light"
+        android:textStyle="bold"
+        android:layout_below="@+id/labPublicaruniformes"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="35dp"
+        android:layout_marginEnd="35dp" />
+
+    <Spinner
+        android:id="@+id/spiEquipo"
+        android:layout_width="276dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="26dp"
+        android:background="#fdfcfc"
+        android:backgroundTint="@color/abc_background_cache_hint_selector_material_light"
+        android:layout_below="@+id/txtarchivo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/txtarchivo"
+        android:layout_alignEnd="@+id/txtarchivo" />
+
+    <Spinner
+        android:id="@+id/spiCategoria"
+        android:layout_width="276dp"
+        android:layout_height="43dp"
+        android:background="#fdfcfc"
+        android:backgroundTint="@color/abc_background_cache_hint_selector_material_light"
+        android:layout_alignBaseline="@+id/spiEquipo"
+        android:layout_alignBottom="@+id/spiEquipo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/btnImagen"
+        android:layout_alignStart="@+id/btnImagen" />
+    <Spinner
+        android:id="@+id/spitallas"
+        android:layout_width="276dp"
+        android:layout_height="43dp"
+        android:background="#fdfcfc"
+        android:backgroundTint="@color/abc_background_cache_hint_selector_material_light"
+        android:layout_below="@+id/spiEquipo"
+        android:layout_toLeftOf="@+id/ckecReplica"
+        android:layout_toStartOf="@+id/ckecReplica"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Precio"
+        android:id="@+id/labPrecio"
+        android:textSize="23dp"
+        android:backgroundTint="#f9f7f7"
+        android:textColor="#faf6f6"
+        android:layout_below="@+id/spitallas"
+        android:layout_toLeftOf="@+id/labPublicaruniformes"
+        android:layout_toStartOf="@+id/labPublicaruniformes"
+        android:layout_marginTop="39dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPrecio"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/txtdescripcion"
+        android:layout_alignStart="@+id/txtdescripcion" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ckecReplica"
+        android:checked="false"
+        android:layout_alignBottom="@+id/labreplica"
+        android:layout_toRightOf="@+id/btnPublicarUniformes"
+        android:layout_toEndOf="@+id/btnPublicarUniformes" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Replica"
+        android:id="@+id/labreplica"
+        android:textSize="23dp"
+        android:textColor="#f4f1f1"
+        android:layout_below="@+id/labPrecio"
+        android:layout_alignLeft="@+id/labPrecio"
+        android:layout_alignStart="@+id/labPrecio" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Descripcion"
+        android:id="@+id/labDescripcion"
+        android:textSize="23dp"
+        android:textColor="#f4f1f1"
+        android:layout_alignTop="@+id/txtdescripcion"
+        android:layout_alignLeft="@+id/spitallas"
+        android:layout_alignStart="@+id/spitallas" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/txtdescripcion"
+        android:layout_below="@+id/labreplica"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:id="@+id/btnPublicarUniformes"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Tela"
+        android:id="@+id/labTela"
+        android:textSize="23dp"
+        android:textColor="#f4f1f1"
+        android:layout_below="@+id/txtdescripcion"
+        android:layout_alignLeft="@+id/labreplica"
+        android:layout_alignStart="@+id/labreplica" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/txtTela"
+        android:layout_alignTop="@+id/labTela"
+        android:layout_alignLeft="@+id/txtdescripcion"
+        android:layout_alignStart="@+id/txtdescripcion"
+        android:layout_alignBottom="@+id/labTela" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Descuento"
+        android:id="@+id/labDescuento"
+        android:textSize="23dp"
+        android:textColor="#f4f1f1"
+        android:layout_alignBottom="@+id/txtDescuento"
+        android:layout_alignLeft="@+id/labTela"
+        android:layout_alignStart="@+id/labTela" />
+
+
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/txtDescuento"
+        android:layout_below="@+id/txtTela"
+        android:layout_toEndOf="@+id/spiEquipo"
+        android:layout_toRightOf="@+id/spiEquipo" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/txtClasificacion"
+        android:layout_above="@+id/btnPublicarUniformes"
+        android:layout_alignLeft="@+id/btnPublicarUniformes"
+        android:layout_alignStart="@+id/btnPublicarUniformes" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Clasificacion"
+        android:id="@+id/labClasificacion"
+        android:textSize="23dp"
+        android:textColor="#f4f1f1"
+        android:layout_above="@+id/btnPublicarUniformes"
+        android:layout_alignLeft="@+id/labDescuento"
+        android:layout_alignStart="@+id/labDescuento" />
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+
+
+
+
